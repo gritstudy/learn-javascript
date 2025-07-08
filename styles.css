@@ -1,0 +1,102 @@
+/* 전체 배경 및 폰트 */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+/* 폼 전체 박스 */
+form {
+  background-color: #fff9f5;
+  border: 2px solid #ffe0c1;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(255, 210, 180, 0.2);
+}
+
+/* 제목 */
+h2 {
+  text-align: center;
+  color: #cc7a7a;
+  margin-bottom: 20px;
+}
+
+/* 라디오 버튼 정렬 */
+input[type="radio"] {
+  display: none;
+}
+
+/* 커스텀 라벨 디자인 */
+label {
+  display: block;
+  background-color: #ffe9e0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 라벨 hover 효과 */
+label:hover {
+  background-color: #ffdcd0;
+}
+
+/* 선택된 라디오 버튼 라벨 강조 */
+input[type="radio"]:checked + label {
+  border-color: #f4a8a8;
+  background-color: #ffd2c2;
+  font-weight: bold;
+  color: #aa4a4a;
+}
+
+/* 제출 버튼 */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #f4a8a8;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e38a8a;
+}
+
+/* class 선택자 */
+.error {
+  background-color: #d789c5;
+}
+
+.parent div {
+  border: violet;
+}
+.children {
+  border: #aa4a4a dotted;
+}
+.children_kids {
+  background-color: #d789c5;
+}
+
+/*일반형제 선택자 */
+.parent ~ div {
+  border: red;
+}
+
+/*일반형제 인접선택자*/
+.parent + div {
+  border: beige;
+}
+
+/*가상선택자  : hover 만 알아보기. 마우스올릴때 스타일 잡는 것*/
