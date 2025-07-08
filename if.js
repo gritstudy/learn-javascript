@@ -16,7 +16,7 @@ const success = () => {
   console.log("합격입니다.");
 };
 const fail = () => {
-  console.log("불합격입니다.");
+  console.log("불합격입니    다.      ".trim());
 };
 
 score >= 80 ? success() : fail();
